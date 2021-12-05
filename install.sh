@@ -70,8 +70,9 @@ source ~/.bash_profile
 #关闭防火墙
 newVersion=`cat /etc/redhat-release|sed -r 's/.* ([0-9]+)\..*/\1/'`
 if [[ ${newVersion} = "7" ]] ; then
- systemctl stop firewalld
- systemctl disable firewalld
+firewall-cmd --permanent --add-port=5218/tcp
+firewall-cmd --permanent --add-port=5218/udp
+firewall-cmd --reload
  
  elif [[ ${newVersion} = "6" ]] ;then 
  service iptables stop
