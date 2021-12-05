@@ -66,5 +66,3 @@ CentOS-6.4-x86_64<br>
 CentOS-6.4-86<br>
 centos-6.9-x86_64<br>
 
-## 写在最后 ##
-Telegram交流群:https://t.me/Socks55555
